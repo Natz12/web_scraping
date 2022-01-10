@@ -12,4 +12,4 @@ A good place to start understanding Selenium is this [post](https://techrando.co
 ### set-up
 - Install Selenium in the environment
 `pip install selenium`
-- Get a web driver like [GeckoDriver](https://github.com/mozilla/geckodriver/releases). The script here uses the web driver for Chrome.
+- Get a web driver like [GeckoDriver](https://github.com/mozilla/geckodriver/releases) or ChromeDriver [[1]](https://chromedriver.chromium.org/home) [[2]](https://sites.google.com/a/chromium.org/chromedriver/getting-started) and [add to path](https://www.kenst.com/2015/03/including-the-chromedriver-location-in-macos-system-path/). The script here uses the web driver for Chrome.
