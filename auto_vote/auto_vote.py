@@ -1,3 +1,5 @@
+# https://votar-trajeartesanal.srtacolombia.org/trajeartesanal.html
+# https://ecommerce-playground.lambdatest.io/index.php?route=account/register
 # Guide from https://www.lambdatest.com/blog/how-to-automate-filling-in-web-forms-with-python-using-selenium/
 
 
@@ -14,12 +16,13 @@ import time
 import random
 
 # User information
-name = 'Nombre'
+name = 'Name LastName'
 email = 'example@example.com'
 
 # Random sleep so the time of voting is not predictable
-random.seed(42)
-random_time=random.randint(1,5)
+# random.seed(42)
+random_time=random.randint(1,10)
+print(random_time)
 time.sleep(random_time)
 
 # Initiate webdriver
@@ -41,7 +44,7 @@ email_form = browser.find_element(By.XPATH, "//input[@id='email']")
 email_form.send_keys(email)
 
 # Delay to visualize info
-time.sleep(1)
+time.sleep(3)
 
 # Send vote
 confirm_button = browser.find_element(By.XPATH, "//form[@id='registration']/center[1]/p[1]/button[1]")
